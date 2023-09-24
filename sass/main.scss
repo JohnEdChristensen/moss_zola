@@ -1,10 +1,67 @@
 // Blatantly borrowed colors from https://github.com/rose-pine/neovim
 
-$rose: #ebbcba;
-$iris: #c4a7e7;
 
-$backgroundcolor: #191724;
-$textcolor: #e0def4;
+$yellow: #c1a670;
+$red:   #A53B3F;
+$blue:  #507B7F;
+$green:  #6B784F;
+$purple: #A39CBD;
+$darkgreen: #344a37;
+
+
+
+
+.ShireMoss {
+  --background: #263830;
+  --white100: #444544;
+  --white200: #575857;
+  --white300: #6c6d6c;
+  --white400: #868886;
+  --white500: #a5a8a6;
+  --white600: #cccecd;
+  --red100: #742d2f;
+  --red200: #95393c;
+  --red300: #ab5153;
+  --red400: #bc7376;
+  --red500: #cf9a9c;
+  --red600: #e4c7c8;
+  --yellow100: #524224;
+  --yellow200: #69552e;
+  --yellow300: #826939;
+  --yellow400: #a28347;
+  --yellow500: #c5a25f;
+  --yellow600: #dfcca6;
+  --green100: #344a37;
+  --green200: #4a5d41;
+  --green300: #64724e;
+  --green400: #808c6a;
+  --green500: #a2aa92;
+  --green600: #cbd0c2;
+  --background17: #394841;
+  --background33: #4d5b54;
+  --background50: #63706a;
+  --background67: #7f8a85;
+  --background83: #a1a9a5;
+  --background100: #cbcfcd;
+  --teal100: #30494a;
+  --teal200: #3e5d5f;
+  --teal300: #4d7376;
+  --teal400: #6a8e90;
+  --teal500: #92acae;
+  --teal600: #c2d1d2;
+  --purple100: #464350;
+  --purple200: #595567;
+  --purple300: #6f6a80;
+  --purple400: #8a849f;
+  --purple500: #aaa3c1;
+  --purple600: #cfccdc;
+}
+
+
+
+
+$backgroundcolor: #1a352b;
+$textcolor: #dddfde;
 
 
 body {
@@ -45,7 +102,7 @@ body {
     background-color: $backgroundcolor;
     top: 0;
     padding-bottom : 5px;
-    border-bottom: solid 1px $rose;
+    border-bottom: solid 1px $yellow;
     overflow: hidden;
     a {
         color: $textcolor;
@@ -54,11 +111,12 @@ body {
 
 .icon {
   border-radius: 50%;
+  margin-left: 50px;
 }
 
 .site_title {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     font-size: 1.5rem;
     a {
         color: $textcolor;
@@ -74,16 +132,16 @@ body {
 }
 
 .date {
-    color: $iris;
+    color: $blue;
 }
 
 .date_postpage {
-    color: $iris;
+    color: $blue;
     text-align: right;
 }
 
 .title {
-    color: $rose;
+    color: $yellow;
     font-size: 1.3rem;
     a {
         text-decoration: none;
@@ -134,7 +192,7 @@ body {
 }
 
 .hr_bottom {
-  color: $rose;
+  color: $yellow;
 }
 
 .footer {
@@ -172,26 +230,30 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $rose;
+    color: $yellow;
     font-weight: bold;
 }
 
 pre {
-    border: 1px solid;
+    //border: 1px solid;
+    border-radius: 3px;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 20px;
+    padding: 10px;
+    background-color: $darkgreen;
+    color: $textcolor;
 }
 
 :not(pre)>code {
-    color: $backgroundcolor;
-    background-color: $textcolor;
-    padding: 3px;
-    border-radius: 8px;
+    //color: $backgroundcolor;
+    background-color: $darkgreen;
+    padding: 2px;
+    border-radius: 2px;
 }
 
 blockquote {
     border-left: 3px solid;
+    border-color: $yellow;
     padding: 0.5rem;
     margin: 0.5rem;
 }
@@ -207,7 +269,7 @@ table th {
 
 table th,
 td {
-    border: 1px #666;
+    border: 1px $green;
     border-style: solid none;
 }
 

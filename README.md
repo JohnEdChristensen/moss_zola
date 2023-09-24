@@ -1,33 +1,34 @@
-# emily_zola_theme
+# moss_zola
 
 ![screenshot01](/static/images/ss01.png)
 
 
-A KISS theme for Zola (static site generator written in Rust). 
+A simple theme for [zola](https://getzola.org)
 
 Features:
 - simple & clean
 - mobile-friendly
 - MathJax support
 
-Demo site is [here](https://emily-zola-theme.netlify.app/).
+Demo site is TODO
 
+Forked from [emily_zola_theme](https://github.com/kyoheiu/emily_zola_theme)
 ## Usage
 
 ```
 cd YOUR_SITE_DIRECTORY/themes
-git clone https://github.com/kyoheiu/emily_zola_theme.git
+git clone https://github.com/JohnEdChristensen/moss_zola
 ```
 
-and set the theme-name in `config.toml` to `emily_zola_theme`.
+and set the theme-name in `config.toml` to `moss_zola`.
 
 ```
-theme = "emily_zola_theme"
+theme = "moss_zola"
 ```
 
 ## example articles
 
-In `YOUR_SITE_DIRECTORY/themes/emily_zola_theme/content`.
+In `YOUR_SITE_DIRECTORY/themes/moss_zola/content`.
 
 ## MathJax support
 
@@ -47,4 +48,4 @@ In addition to default values, you can customize following parts easily:
 - header icon size (default width: 70px)
 - number of posts in `index.html` (default 5)
 
-Set your own in `themes/emily_zola_theme/theme.toml`, or to overwrite, copy `[extra]` block, paste it into your `config.toml` and edit.
+Set your own in `themes/moss_zola/theme.toml`, or to overwrite, copy `[extra]` block, paste it into your `config.toml` and edit.
